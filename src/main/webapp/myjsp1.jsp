@@ -17,7 +17,7 @@
     <input type="text"name="password" placeholder="password" maxlength="8"><br>
     <input type="text" name="Email" placeholder="Email"><br>
     Gender <input type="radio" name="sex" value="boy">Male <input type="radio" value="girl" name="sex">Female<br>
-    <input type="date" name="birthday"><br>
+    <input type="text" name="birthday" placeholder="birthday"><br>
     <input type="submit" value="Register">
 </form>
 </body>

@@ -3,12 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
-        <servlet-name>gwy</servlet-name>
-        <servlet-class>com.GaoWenyu.week2.demo.HelloWorldServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>gwy</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.mysql.cj.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost:3306/userdb</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>gwy060038gwy</param-value>
+    </context-param>
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>Gao Wenyu</param-value>
+    </context-param>
+    <context-param>
+        <param-name>id</param-name>
+        <param-value>2022211001000505</param-value>
+    </context-param>
 </web-app>
